@@ -1,0 +1,27 @@
+version: "3"
+
+services:
+  web:
+    container_name: frontend-master
+    build: .
+    ports: 
+      - "8080:80"
+    restart: "always"
+    networks: 
+      - web_network
+    environment: 
+      - NODE_ENV=production
+
+  web2:
+    container_name: frontend-slave
+    build: .
+    ports: 
+      - "8081:80"
+    restart: "always"
+    networks: 
+      - web_network
+    environment: 
+      - NODE_ENV=production
+
+networks: 
+  web_network: 

@@ -1,0 +1,13 @@
+docker image ls
+
+docker run --rm --name service -it node:12.18-alpine bash
+docker run --rm --name service -it node:latest bash
+
+// build docker file
+docker build -t react-csr .
+
+// run 
+docker run --rm -d --name frontend -p 80:80 react-csr 
+
+// run local
+docker run --rm --name local-web -v ~/workspace/scb/react-boilerplate-typescript/:/app  -it -p 3000:3000 local-web bash
