@@ -1,13 +1,7 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
 
-function App() {
-  return (
-    <div className="App">
-     hello eieie
-    </div>
-  );
-}
+const App = () => {
+  return <div>Hello App here</div>;
+};
 
 export default App;
