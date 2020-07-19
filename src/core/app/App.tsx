@@ -71,6 +71,22 @@ class SiderDemo extends React.Component<Props, IState> {
                 href="/www.google.com"
                 title="แนะนำวิธีการใช้บัตรเครดิต"
               />
+              <PdfLink
+                href="/www.google.com"
+                title="แนะนำวิธีการใช้บัตรเครดิต"
+              />
+              <PdfLink
+                href="/www.google.com"
+                title="แนะนำวิธีการใช้บัตรเครดิต"
+              />
+              <PdfLink
+                href="/www.google.com"
+                title="แนะนำวิธีการใช้บัตรเครดิต"
+              />
+              <PdfLink
+                href="/www.google.com"
+                title="แนะนำวิธีการใช้บัตรเครดิต"
+              />
             </div>
           </Content>
           <Footer style={{ textAlign: "center" }}>
