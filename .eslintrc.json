@@ -20,9 +20,12 @@
       { "extensions": [".js", ".jsx", ".ts", ".tsx"] }
     ],
     "quotes": ["error", "double"],
-    "import/extensions": ["error", "never"],
+    "import/extensions": "off",
     "arrow-body-style": "off",
-    "comma-dangle": ["error", "never"]
+    "comma-dangle": ["error", "never"],
+    "object-curly-newline": "off",
+    "react/prop-types": "off",
+    "react/jsx-props-no-spreading": "off"
   },
   "settings": {
     "import/resolver": {
