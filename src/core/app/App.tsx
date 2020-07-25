@@ -8,6 +8,7 @@ import {
   UserOutlined
 } from "@ant-design/icons";
 import PdfLink from "../components/PdfLink";
+import Steps, { Step } from "../components/Steps";
 
 const { Header, Content, Footer, Sider } = Layout;
 const { SubMenu } = Menu;
@@ -75,18 +76,12 @@ class SiderDemo extends React.Component<Props, IState> {
                 href="/www.google.com"
                 title="แนะนำวิธีการใช้บัตรเครดิต"
               />
-              <PdfLink
-                href="/www.google.com"
-                title="แนะนำวิธีการใช้บัตรเครดิต"
-              />
-              <PdfLink
-                href="/www.google.com"
-                title="แนะนำวิธีการใช้บัตรเครดิต"
-              />
-              <PdfLink
-                href="/www.google.com"
-                title="แนะนำวิธีการใช้บัตรเครดิต"
-              />
+              <br />
+              <Steps current={1}>
+                <Step title="1" />
+                <Step title="2" />
+                <Step title="3" />
+              </Steps>
             </div>
           </Content>
           <Footer style={{ textAlign: "center" }}>
